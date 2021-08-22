@@ -1,5 +1,7 @@
 server:
   port: 7071
+  servlet:
+    context-path: /
 
 spring:
   cloud:
