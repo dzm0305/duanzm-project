@@ -11,3 +11,7 @@ spring:
   application:
     name: mall-coupon
 
+coupon:
+  user:
+    name: zhangsan
+    age: 22

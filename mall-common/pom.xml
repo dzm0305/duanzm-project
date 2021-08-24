@@ -24,10 +24,24 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- loadbalancer -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>
             <version>2.2.1.RELEASE</version>
+        </dependency>
+
+        <!-- alibaba-nacos-config配置管理 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- alibaba-nacos-config配置管理所需要的依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <version>3.0.3</version>
         </dependency>
     </dependencies>
 
