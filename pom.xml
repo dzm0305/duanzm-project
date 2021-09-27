@@ -14,9 +14,7 @@
         <module>mall-coupon</module>
         <module>mall-member</module>
         <module>mall-order</module>
-        <module>mall-ware</module>
         <module>mall-common</module>
-        <module>renren-generator</module>
         <module>java-base</module>
         <module>mall-fast</module>
     </modules>

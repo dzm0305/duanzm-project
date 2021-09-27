@@ -87,7 +87,7 @@ token:
   # 令牌有效期（默认30分钟）
   expireTime: 30
 
-# MyBatis配置
+# MyBatis配置，使用了通配符重写了MyBatisConfig，因此在添加属性后需要在自定义的MyBatisConfig.java中进行添加，否则不生效
 mybatis:
   # 搜索指定包别名
   typeAliasesPackage: com.duanzm.**.domain
