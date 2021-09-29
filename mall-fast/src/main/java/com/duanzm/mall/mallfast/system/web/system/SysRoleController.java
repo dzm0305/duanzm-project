@@ -12,7 +12,7 @@ import com.duanzm.mall.mallfast.common.utils.SecurityUtils;
 import com.duanzm.mall.mallfast.common.utils.ServletUtils;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
 import com.duanzm.mall.mallfast.common.utils.poi.ExcelUtil;
-import com.duanzm.mall.mallfast.framework.web.service.SysPermissionService;
+import com.duanzm.mall.mallfast.framework.security.service.SysPermissionService;
 import com.duanzm.mall.mallfast.framework.web.service.TokenService;
 import com.duanzm.mall.mallfast.system.service.ISysRoleService;
 import com.duanzm.mall.mallfast.system.service.ISysUserService;

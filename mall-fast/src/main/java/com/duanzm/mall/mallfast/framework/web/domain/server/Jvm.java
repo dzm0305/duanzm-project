@@ -1,6 +1,5 @@
 package com.duanzm.mall.mallfast.framework.web.domain.server;
 
-
 import com.duanzm.mall.mallfast.common.utils.Arith;
 import com.duanzm.mall.mallfast.common.utils.DateUtils;
 

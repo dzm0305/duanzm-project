@@ -1,6 +1,5 @@
 package com.duanzm.mall.mallfast.framework.manager;
 
-
 import com.duanzm.mall.mallfast.common.utils.Threads;
 import com.duanzm.mall.mallfast.common.utils.spring.SpringUtils;
 

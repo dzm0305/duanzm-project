@@ -1,12 +1,13 @@
 package com.duanzm.mall.mallfast.system.service;
 
+
 import com.duanzm.mall.mallfast.common.core.domain.entity.SysDictData;
 
 import java.util.List;
 
 /**
  * 字典 业务层
- *
+ * 
  * @author ruoyi
  */
 public interface ISysDictDataService {
@@ -21,7 +22,7 @@ public interface ISysDictDataService {
     /**
      * 根据字典类型和字典键值查询字典数据信息
      *
-     * @param dictType  字典类型
+     * @param dictType 字典类型
      * @param dictValue 字典键值
      * @return 字典标签
      */
@@ -41,7 +42,7 @@ public interface ISysDictDataService {
      * @param dictCodes 需要删除的字典数据ID
      * @return 结果
      */
-    public int deleteDictDataByIds(Long[] dictCodes);
+    public void deleteDictDataByIds(Long[] dictCodes);
 
     /**
      * 新增保存字典数据信息

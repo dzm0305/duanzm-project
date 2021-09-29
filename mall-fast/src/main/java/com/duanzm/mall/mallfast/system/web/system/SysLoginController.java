@@ -8,7 +8,7 @@ import com.duanzm.mall.mallfast.common.core.domain.model.LoginBody;
 import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.utils.ServletUtils;
 import com.duanzm.mall.mallfast.framework.web.service.SysLoginService;
-import com.duanzm.mall.mallfast.framework.web.service.SysPermissionService;
+import com.duanzm.mall.mallfast.framework.security.service.SysPermissionService;
 import com.duanzm.mall.mallfast.framework.web.service.TokenService;
 import com.duanzm.mall.mallfast.system.service.ISysMenuService;
 import org.springframework.beans.factory.annotation.Autowired;

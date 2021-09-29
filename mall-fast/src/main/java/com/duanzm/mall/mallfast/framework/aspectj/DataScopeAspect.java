@@ -9,7 +9,6 @@ import com.duanzm.mall.mallfast.common.utils.ServletUtils;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
 import com.duanzm.mall.mallfast.common.utils.spring.SpringUtils;
 import com.duanzm.mall.mallfast.framework.web.service.TokenService;
-import org.apache.ibatis.binding.MapperMethod;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Aspect;

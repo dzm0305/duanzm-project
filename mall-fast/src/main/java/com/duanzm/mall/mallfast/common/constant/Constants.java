@@ -1,8 +1,10 @@
 package com.duanzm.mall.mallfast.common.constant;
 
+import io.jsonwebtoken.Claims;
+
 /**
  * 通用常量信息
- *
+ * 
  * @author ruoyi
  */
 public class Constants {
@@ -47,6 +49,11 @@ public class Constants {
     public static final String LOGOUT = "Logout";
 
     /**
+     * 注册
+     */
+    public static final String REGISTER = "Register";
+
+    /**
      * 登录失败
      */
     public static final String LOGIN_FAIL = "Error";
@@ -65,6 +72,11 @@ public class Constants {
      * 防重提交 redis key
      */
     public static final String REPEAT_SUBMIT_KEY = "repeat_submit:";
+
+    /**
+     * 限流 redis key
+     */
+    public static final String RATE_LIMIT_KEY = "rate_limit:";
 
     /**
      * 验证码有效期（分钟）
@@ -94,7 +106,7 @@ public class Constants {
     /**
      * 用户名称
      */
-    public static final String JWT_USERNAME = "sub";
+    public static final String JWT_USERNAME = Claims.SUBJECT;
 
     /**
      * 用户头像
@@ -125,4 +137,14 @@ public class Constants {
      * 资源映射路径 前缀
      */
     public static final String RESOURCE_PREFIX = "/profile";
+
+    /**
+     * RMI 远程方法调用
+     */
+    public static final String LOOKUP_RMI = "rmi://";
+
+    /**
+     * LDAP 远程方法调用
+     */
+    public static final String LOOKUP_LDAP = "ldap://";
 }
