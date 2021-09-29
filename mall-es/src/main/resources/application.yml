@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: mall-es
+server:
+  port: 7070

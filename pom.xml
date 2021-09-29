@@ -17,5 +17,6 @@
         <module>mall-common</module>
         <module>java-base</module>
         <module>mall-fast</module>
+        <module>mall-es</module>
     </modules>
 </project>
