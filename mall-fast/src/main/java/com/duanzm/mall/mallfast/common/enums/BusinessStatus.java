@@ -2,12 +2,8 @@ package com.duanzm.mall.mallfast.common.enums;
 
 /**
  * 操作状态
- * 
- * @author ruoyi
- *
  */
-public enum BusinessStatus
-{
+public enum BusinessStatus {
     /**
      * 成功
      */

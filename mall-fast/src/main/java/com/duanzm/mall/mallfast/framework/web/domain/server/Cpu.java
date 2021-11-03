@@ -4,8 +4,6 @@ import com.duanzm.mall.mallfast.common.utils.Arith;
 
 /**
  * CPU相关信息
- *
- * @author ruoyi
  */
 public class Cpu {
     /**

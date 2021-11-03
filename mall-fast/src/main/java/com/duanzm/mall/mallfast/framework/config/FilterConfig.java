@@ -14,8 +14,6 @@ import java.util.Map;
 
 /**
  * Filter配置
- *
- * @author ruoyi
  */
 @Configuration
 public class FilterConfig {
@@ -55,5 +53,4 @@ public class FilterConfig {
         registration.setOrder(FilterRegistrationBean.LOWEST_PRECEDENCE);
         return registration;
     }
-
 }

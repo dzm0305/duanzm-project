@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 服务器监控
- *
- * @author ruoyi
  */
 @RestController
 @RequestMapping("/monitor/server")

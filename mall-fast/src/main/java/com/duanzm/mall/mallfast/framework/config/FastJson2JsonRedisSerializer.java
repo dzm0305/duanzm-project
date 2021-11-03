@@ -14,11 +14,9 @@ import java.nio.charset.Charset;
 
 /**
  * Redis使用FastJson序列化
- *
- * @author ruoyi
  */
 public class FastJson2JsonRedisSerializer<T> implements RedisSerializer<T> {
-    @SuppressWarnings("unused")
+
     private ObjectMapper objectMapper = new ObjectMapper();
 
     public static final Charset DEFAULT_CHARSET = Charset.forName("UTF-8");
