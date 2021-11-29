@@ -1,3 +1,5 @@
+server:
+  port: 8090
 spring:
   redis:
     # Redis服务器地址
@@ -10,7 +12,7 @@ spring:
     database: 0
     # Redis服务器连接密码(默认为空)
     #password:
-    timeout: 1000
+    timeout: 5000
     # Redis服务器连接池
     jedis:
       pool:
