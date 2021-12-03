@@ -27,7 +27,9 @@ public class RedisString {
         }catch (Exception e){
             e.printStackTrace();
         }finally {
-            jedis.close();
+            if (jedis != null) {
+                jedis.close();
+            }
         }
     }
 
@@ -40,7 +42,9 @@ public class RedisString {
         }catch (Exception e){
             e.printStackTrace();
         }finally {
-            jedis.close();
+            if (jedis != null) {
+                jedis.close();
+            }
         }
     }
 }
