@@ -1,4 +1,4 @@
-package com.duanzm.mall.mallfast.common.core.domain.model;
+package com.duanzm.mall.mallfast.framework.security.model;
 
 import com.duanzm.mall.mallfast.common.core.domain.entity.SysUser;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -10,8 +10,6 @@ import java.util.Set;
 
 /**
  * 登录用户身份权限
- *
- * @author ruoyi
  */
 public class LoginUser implements UserDetails {
     private static final long serialVersionUID = 1L;
@@ -227,6 +225,10 @@ public class LoginUser implements UserDetails {
         this.user = user;
     }
 
+    /**
+     * 返回用户的角色信息
+     * @return
+     */
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;

@@ -2,7 +2,6 @@ package com.duanzm.mall.mallfast.common.core.controller;
 
 import com.duanzm.mall.mallfast.common.constant.HttpStatus;
 import com.duanzm.mall.mallfast.common.core.domain.AjaxResult;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.core.page.PageDomain;
 import com.duanzm.mall.mallfast.common.core.page.TableDataInfo;
 import com.duanzm.mall.mallfast.common.core.page.TableSupport;
@@ -10,6 +9,7 @@ import com.duanzm.mall.mallfast.common.utils.DateUtils;
 import com.duanzm.mall.mallfast.common.utils.SecurityUtils;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
 import com.duanzm.mall.mallfast.common.utils.sql.SqlUtil;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;

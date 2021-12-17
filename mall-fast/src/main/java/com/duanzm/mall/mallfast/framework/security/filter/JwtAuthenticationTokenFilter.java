@@ -1,8 +1,8 @@
 package com.duanzm.mall.mallfast.framework.security.filter;
 
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.utils.SecurityUtils;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.duanzm.mall.mallfast.framework.web.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

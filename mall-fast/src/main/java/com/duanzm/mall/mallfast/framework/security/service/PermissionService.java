@@ -1,9 +1,10 @@
-package com.duanzm.mall.mallfast.framework.web.service;
+package com.duanzm.mall.mallfast.framework.security.service;
 
 import com.duanzm.mall.mallfast.common.core.domain.entity.SysRole;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.utils.ServletUtils;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
+import com.duanzm.mall.mallfast.framework.web.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -11,7 +12,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.Set;
 
 /**
- * RuoYi首创 自定义权限实现，ss取自SpringSecurity首字母
+ * 自定义权限实现，ss取自SpringSecurity首字母
  */
 @Service("ss")
 public class PermissionService {

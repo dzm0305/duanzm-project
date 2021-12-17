@@ -1,8 +1,8 @@
 package com.duanzm.mall.mallfast.common.utils;
 
 import com.duanzm.mall.mallfast.common.constant.HttpStatus;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.exception.ServiceException;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

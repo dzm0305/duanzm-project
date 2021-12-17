@@ -1,13 +1,13 @@
 package com.duanzm.mall.mallfast.framework.web.service;
 
 import com.duanzm.mall.mallfast.common.constant.Constants;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.core.redis.RedisCache;
 import com.duanzm.mall.mallfast.common.utils.ServletUtils;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
 import com.duanzm.mall.mallfast.common.utils.ip.AddressUtils;
 import com.duanzm.mall.mallfast.common.utils.ip.IpUtils;
 import com.duanzm.mall.mallfast.common.utils.uuid.IdUtils;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import eu.bitwalker.useragentutils.UserAgent;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

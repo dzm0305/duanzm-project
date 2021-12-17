@@ -2,7 +2,6 @@ package com.duanzm.mall.mallfast.framework.web.service;
 
 import com.duanzm.mall.mallfast.common.constant.Constants;
 import com.duanzm.mall.mallfast.common.core.domain.entity.SysUser;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.core.redis.RedisCache;
 import com.duanzm.mall.mallfast.common.exception.ServiceException;
 import com.duanzm.mall.mallfast.common.exception.user.CaptchaException;
@@ -14,6 +13,7 @@ import com.duanzm.mall.mallfast.common.utils.ServletUtils;
 import com.duanzm.mall.mallfast.common.utils.ip.IpUtils;
 import com.duanzm.mall.mallfast.framework.manager.AsyncManager;
 import com.duanzm.mall.mallfast.framework.manager.factory.AsyncFactory;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.duanzm.mall.mallfast.system.service.ISysConfigService;
 import com.duanzm.mall.mallfast.system.service.ISysUserService;
 import org.springframework.beans.factory.annotation.Autowired;

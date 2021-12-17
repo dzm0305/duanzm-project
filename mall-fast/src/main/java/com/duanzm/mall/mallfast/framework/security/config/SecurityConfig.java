@@ -20,10 +20,12 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * spring security配置
- *  1、Spring Security默认是禁用注解的，要想开启注解，需要在继承WebSecurityConfigurerAdapter的类上加@EnableGlobalMethodSecurity注解开启基于方法的安全认证机制，也就是说在web层的controller启用注解机制的安全确认
- *  prePostEnabled=true: 确定 前置注解[@PreAuthorize,@PostAuthorize,..]是否启用
+ *  1、Spring Security默认是禁用注解的，
+ *      要想开启注解，需要在继承WebSecurityConfigurerAdapter的类上加@EnableGlobalMethodSecurity注解开启基于方法的安全认证机制，
+ *      也就是说在web层的controller启用注解机制的安全确认
+ *  prePostEnabled=true: 确定前置注解[@PreAuthorize, @PostAuthorize,..]是否启用
  *  securedEnabled=true：确定安全注解[@Secured]是否启用
- *  参考链接：https://note.youdao.com/s/c3ZHqEYN
+ *  参考链接：https://juejin.cn/post/6898868107960385549
  */
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {

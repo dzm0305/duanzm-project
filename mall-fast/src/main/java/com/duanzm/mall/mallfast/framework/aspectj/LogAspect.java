@@ -2,7 +2,6 @@ package com.duanzm.mall.mallfast.framework.aspectj;
 
 import com.alibaba.fastjson.JSON;
 import com.duanzm.mall.mallfast.common.annotation.Log;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.enums.BusinessStatus;
 import com.duanzm.mall.mallfast.common.enums.HttpMethod;
 import com.duanzm.mall.mallfast.common.utils.ServletUtils;
@@ -11,6 +10,7 @@ import com.duanzm.mall.mallfast.common.utils.ip.IpUtils;
 import com.duanzm.mall.mallfast.common.utils.spring.SpringUtils;
 import com.duanzm.mall.mallfast.framework.manager.AsyncManager;
 import com.duanzm.mall.mallfast.framework.manager.factory.AsyncFactory;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.duanzm.mall.mallfast.framework.web.service.TokenService;
 import com.duanzm.mall.mallfast.system.domain.SysOperLog;
 import org.aspectj.lang.JoinPoint;

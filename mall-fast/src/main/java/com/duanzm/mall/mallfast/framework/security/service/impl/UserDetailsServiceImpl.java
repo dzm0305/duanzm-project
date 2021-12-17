@@ -1,10 +1,10 @@
 package com.duanzm.mall.mallfast.framework.security.service.impl;
 
 import com.duanzm.mall.mallfast.common.core.domain.entity.SysUser;
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.enums.UserStatus;
 import com.duanzm.mall.mallfast.common.exception.base.BaseException;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.duanzm.mall.mallfast.framework.security.service.SysPermissionService;
 import com.duanzm.mall.mallfast.system.service.ISysUserService;
 import org.slf4j.Logger;
@@ -28,6 +28,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private SysPermissionService permissionService;
 
+    /**
+     * @param username 用户在登录的时候传入的用户名，根据用户名去查询用户信息（查出来之后，系统会自动进行密码比对)
+     * @return
+     * @throws UsernameNotFoundException
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         /**-------- 通过用户名查询用户 -----------**/

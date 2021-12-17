@@ -1,7 +1,7 @@
 package com.duanzm.mall.mallfast.system.service;
 
 
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.duanzm.mall.mallfast.system.domain.SysUserOnline;
 
 /**

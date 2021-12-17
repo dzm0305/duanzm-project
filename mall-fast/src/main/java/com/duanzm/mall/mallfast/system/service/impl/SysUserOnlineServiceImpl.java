@@ -1,7 +1,7 @@
 package com.duanzm.mall.mallfast.system.service.impl;
 
-import com.duanzm.mall.mallfast.common.core.domain.model.LoginUser;
 import com.duanzm.mall.mallfast.common.utils.StringUtils;
+import com.duanzm.mall.mallfast.framework.security.model.LoginUser;
 import com.duanzm.mall.mallfast.system.domain.SysUserOnline;
 import com.duanzm.mall.mallfast.system.service.ISysUserOnlineService;
 import org.springframework.stereotype.Service;

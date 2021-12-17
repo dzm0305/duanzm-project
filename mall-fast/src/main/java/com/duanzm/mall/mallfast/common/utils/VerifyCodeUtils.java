@@ -105,9 +105,7 @@ public class VerifyCodeUtils {
             int rgb = getRandomIntColor();
             image.setRGB(x, y, rgb);
         }
-
         shear(g2, w, h, c);// 使图片扭曲
-
         g2.setColor(getRandColor(100, 160));
         int fontSize = h - 4;
         Font font = new Font("Algerian", Font.ITALIC, fontSize);
@@ -120,7 +118,6 @@ public class VerifyCodeUtils {
             g2.setTransform(affine);
             g2.drawChars(chars, i, 1, ((w - 10) / verifySize) * i + 5, h / 2 + fontSize / 2 - 10);
         }
-
         g2.dispose();
         ImageIO.write(image, "jpg", os);
     }
