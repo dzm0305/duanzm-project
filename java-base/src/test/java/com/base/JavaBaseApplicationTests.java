@@ -8,6 +8,7 @@ class JavaBaseApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("124534567890-");
     }
 
 }
