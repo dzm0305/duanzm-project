@@ -1,6 +1,8 @@
 package com.base.token;
 
 import com.alibaba.druid.util.StringUtils;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -18,31 +20,26 @@ import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.security.Security;
 import java.util.Base64;
 
-public class TokenTest {
-
-    static {
-//        Security.addProvider(new BouncyCastleProvider());
-    }
+@SpringBootTest
+class TokenApplicationTests {
 
     //密钥
     static String key = "5SlBTN2H5xDSDyuy";
     //偏移量
     static String IVCODE = "5e8y6w45ju8w9jq8";
 
-    public static void main(String[] args) throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, InvalidKeyException, UnsupportedEncodingException {
-
-
+    @Test
+    void contextLoads() throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, InvalidKeyException, UnsupportedEncodingException {
         long ts = System.currentTimeMillis();
-//        long ts = 1636775708922L;
-//        String userName = "sys_guolan";
-        String userName = "wjq_wgxt";
-//        String userName = "zd_zhuoyuan";
+        //long ts = 1636775708922L;
+        //String userName = "sys_guolan";
+        String userName = "jiayouzhan_user";
+        //String userName = "zd_zhuoyuan";
 
         //加密前的token（时间戳-用户名-时间戳）
-//        String token = "1615232894840-chqwgxt-1615232894840";
+        //String token = "1615232894840-chqwgxt-1615232894840";
         String token = ts + "-" + userName + "-" + ts;
         //加密密钥，线下交流获取
         String aesKey = "5SlBTN2H5xDSDyuy";
@@ -57,12 +54,10 @@ public class TokenTest {
         byte[] decryptBytes = cipher.doFinal(encryptBytes);
         // 加密后的token
         token = Base64.getEncoder().encodeToString(decryptBytes);
-
         System.out.println(token);
-        System.out.println(URLEncoder.encode(token, "UTF-8"));
+        System.out.println("----" + URLEncoder.encode(token, "UTF-8"));
         System.out.println(decrypt(token, ts));
-//        System.out.println(decrypt("OvkkVoPXFpj7XVExFG10aWMPyA15do3QFLv4p9IXAZUPt7o7BFAdtt+KSdIpD2qP", 1614851655080L));
-
+        //System.out.println(decrypt("OvkkVoPXFpj7XVExFG10aWMPyA15do3QFLv4p9IXAZUPt7o7BFAdtt+KSdIpD2qP", 1614851655080L));
     }
 
     //AES解密
@@ -84,13 +79,10 @@ public class TokenTest {
             } else {
                 return strArray[1];
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return null;
-
     }
 
     public static void xxxx() {
@@ -112,17 +104,15 @@ public class TokenTest {
             try (OutputStream os = connection.getOutputStream()) {
                 os.write(content.getBytes(StandardCharsets.UTF_8));
             }
-
             try (InputStream is = connection.getInputStream()) {
                 byte[] bytes = new byte[is.available()];
                 int i = is.read(bytes);
                 resp = new String(bytes, StandardCharsets.UTF_8);
             }
             connection.disconnect();
-
         } catch (Exception e) {
             //TODO
         }
-//        return resp;
+        //return resp;
     }
 }
