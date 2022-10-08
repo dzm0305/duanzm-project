@@ -34,8 +34,8 @@ class TokenApplicationTests {
     void contextLoads() throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, InvalidKeyException, UnsupportedEncodingException {
         long ts = System.currentTimeMillis();
         //long ts = 1636775708922L;
-        //String userName = "sys_guolan";
-        String userName = "jiayouzhan_user";
+        String userName = "sys_guolan";
+        //String userName = "jiayouzhan_user";
         //String userName = "zd_zhuoyuan";
 
         //加密前的token（时间戳-用户名-时间戳）

@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>mall-produce</artifactId>
+    <packaging>war</packaging>
 
     <name>mall-produce</name>
     <description>商城-商品</description>

@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>mall-order</artifactId>
+    <packaging>war</packaging>
 
     <name>mall-order</name>
     <description>商城-订单</description>
@@ -22,12 +23,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>

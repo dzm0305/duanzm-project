@@ -12,13 +12,10 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mall-produce</module>
-        <module>mall-coupon</module>
-        <module>mall-order</module>
         <module>mall-common</module>
         <module>java-base</module>
-        <module>mall-fast</module>
-        <module>mall-redis</module>
+        <module>config-redis</module>
+        <module>config-mybatis-plus</module>
     </modules>
 
     <properties>
@@ -31,7 +28,12 @@
         <druid.version>1.1.21</druid.version>
         <lombok.version>1.18.12</lombok.version>
         <mysql.version>8.0.21</mysql.version>
-        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <p6spy.version>3.9.1</p6spy.version>
+        <spring.web.version>5.3.15</spring.web.version>
+        <commons-lang3.version>3.4</commons-lang3.version>
+        <apache-poi.version>3.9</apache-poi.version>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 
     <dependencyManagement>
@@ -97,6 +99,36 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>${p6spy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${apache-poi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.web.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
