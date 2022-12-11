@@ -15,7 +15,6 @@
         <module>mall-common</module>
         <module>java-base</module>
         <module>config-redis</module>
-        <module>config-mybatis-plus</module>
     </modules>
 
     <properties>

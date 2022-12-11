@@ -11,9 +11,18 @@ class JavaBaseApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println(ArrayUtils.indexOf(sfopOldKeys, "IS_VERTICAL_RECTIFICATION"));
+        // System.out.println(ArrayUtils.indexOf(sfopOldKeys, "IS_VERTICAL_RECTIFICATION"));
 
-        System.out.println("124534567890-");
+        String originalUrl = "http://10.1.50.153:88/itsmApp/upload/file/47d285cd25f94c428a4062f80c7dab04.pdf";
+        if(originalUrl.contains("10.1.50.153:88")) {
+            String replace1 = originalUrl.replace("172.25.80.154:8081", "10.1.50.153:88");
+            String replace2 = originalUrl.replace( "10.1.50.153:88", "172.25.80.154:8081");
+            // System.out.println(replace2);
+        }
+
+
+        String str = "1234567890、";
+        System.out.println(str.substring(0, str.length() - 1));
     }
 
 }
