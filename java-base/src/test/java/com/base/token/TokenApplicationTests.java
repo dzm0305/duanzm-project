@@ -36,8 +36,9 @@ class TokenApplicationTests {
         //long ts = 1636775708922L;
         //String userName = "sys_guolan";
         //String userName = "jiayouzhan_user";
-        //String userName = "zd_zhuoyuan";
-        String userName = "ceshi2";
+        String userName = "pidu_kaifa";
+        // String userName = "pidu_kaifa";
+        //String userName = "wenjiang_kaifa";
 
         //加密前的token（时间戳-用户名-时间戳）
         //String token = "1615232894840-chqwgxt-1615232894840";

@@ -23,6 +23,20 @@ class JavaBaseApplicationTests {
 
         String str = "1234567890、";
         System.out.println(str.substring(0, str.length() - 1));
+
+
+        System.out.println("开始");
+        for(int i = 0; i < 10; i++) {
+            System.out.println(i);
+            if(i == 5){
+                break;
+            }
+        }
+        System.out.println("结束");
+
+
+
+
     }
 
 }
