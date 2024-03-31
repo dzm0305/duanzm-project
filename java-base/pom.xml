@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.duanzm.mall</groupId>
-        <artifactId>mall</artifactId>
+        <groupId>com.duanzm</groupId>
+        <artifactId>duanzm-project</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -40,8 +40,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.duanzm.mall</groupId>
-            <artifactId>mall-common</artifactId>
+            <groupId>com.duanzm</groupId>
+            <artifactId>d-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

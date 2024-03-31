@@ -22,7 +22,7 @@ class JavaBaseApplicationTests {
 
 
         String str = "1234567890、";
-        System.out.println(str.substring(0, str.length() - 1));
+        //System.out.println(str.substring(0, str.length() - 1));
 
 
         System.out.println("开始");
@@ -32,10 +32,11 @@ class JavaBaseApplicationTests {
                 break;
             }
         }
-        System.out.println("结束");
+        //System.out.println("结束");
 
 
-
+        String s = "0123";
+        System.out.println(s.substring(0, 4));
 
     }
 

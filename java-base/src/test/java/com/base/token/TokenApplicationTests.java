@@ -24,9 +24,10 @@ import java.util.Base64;
 
 @SpringBootTest
 class TokenApplicationTests {
-
+    // 用户
+    String userName = "jinjiang_user";
     //密钥
-    static String key = "5SlBTN2H5xDSDyuy";
+    static String aesKey = "5SlBTN2H5xDSDyuy";
     //偏移量
     static String IVCODE = "5e8y6w45ju8w9jq8";
 
@@ -36,7 +37,8 @@ class TokenApplicationTests {
         //long ts = 1636775708922L;
         //String userName = "sys_guolan";
         //String userName = "jiayouzhan_user";
-        String userName = "pidu_kaifa";
+        // String userName = "jinjiang_user";
+        // String userName = "ceshi2";
         // String userName = "pidu_kaifa";
         //String userName = "wenjiang_kaifa";
 
@@ -67,7 +69,7 @@ class TokenApplicationTests {
         try {
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             IvParameterSpec iv = new IvParameterSpec(IVCODE.getBytes());
-            cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(key.getBytes(), "AES"), iv);
+            cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(aesKey.getBytes(), "AES"), iv);
             // 采用base64算法进行转码,避免出现中文乱码
             byte[] encryptBytes = Base64.getDecoder().decode(token);
             byte[] decryptBytes = cipher.doFinal(encryptBytes);

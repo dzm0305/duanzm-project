@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.duanzm.mall</groupId>
-    <artifactId>mall</artifactId>
+    <groupId>com.duanzm</groupId>
+    <artifactId>duanzm-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>mall</name>
+    <name>duanzm</name>
     <description>聚合服务</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>mall-common</module>
+        <module>d-common</module>
         <module>java-base</module>
         <module>config-redis</module>
     </modules>

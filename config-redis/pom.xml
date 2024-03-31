@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.duanzm</groupId>
-    <artifactId>mall-redis</artifactId>
+    <artifactId>config-redis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mall-redis</name>
+    <name>d-redis</name>
     <description>Redis练习</description>
     <properties>
         <java.version>1.8</java.version>

@@ -1,4 +1,4 @@
-package com.duanzm.mall.redis;
+package com.duanzm.redis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.SpringApplication;
